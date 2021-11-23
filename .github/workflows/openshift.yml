@@ -148,14 +148,14 @@ jobs:
     # https://github.com/redhat-actions/push-to-registry#readme
     - name: Push to registry
       id: push-image
-      run: docker images
-#       uses: redhat-actions/push-to-registry@v2
-#       with:
-#         image: ${{ steps.build-image.outputs.image }}
-#         tags: ${{ steps.build-image.outputs.tags }}
-#         registry: ${{ env.IMAGE_REGISTRY }}
-#         username: ${{ env.IMAGE_REGISTRY_USER }}
-#         password: ${{ env.IMAGE_REGISTRY_PASSWORD }}
+#       run: docker images
+      uses: redhat-actions/push-to-registry@v2
+      with:
+        image: ghcr.io/${{ github.repository_owner }}/${{ steps.build-image.outputs.image }}
+        tags: ${{ steps.build-image.outputs.tags }}
+        registry: ${{ env.IMAGE_REGISTRY }}
+        username: ${{ env.IMAGE_REGISTRY_USER }}
+        password: ${{ env.IMAGE_REGISTRY_PASSWORD }}
 
     # The path the image was pushed to is now stored in ${{ steps.push-image.outputs.registry-path }}
 
