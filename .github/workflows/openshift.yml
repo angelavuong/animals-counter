@@ -153,8 +153,10 @@ jobs:
       with:
 #         image: ${{ steps.build-image.outputs.image }}
 #         tags: ${{ steps.build-image.outputs.tags }}
-        image: ${{ env.APP_NAME }}
-        tags: ${{ env.IMAGE_TAGS }}
+#         image: ${{ env.APP_NAME }}
+#         tags: ${{ env.IMAGE_TAGS }}
+        image: animals-counter-gh
+        tags: latest
         registry: ${{ env.IMAGE_REGISTRY }}
         username: ${{ env.IMAGE_REGISTRY_USER }}
         password: ${{ env.IMAGE_REGISTRY_PASSWORD }}
