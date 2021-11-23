@@ -49,7 +49,7 @@ env:
 #   IMAGE_REGISTRY_USER: ${{ github.actor }}
 #   IMAGE_REGISTRY_PASSWORD: ${{ github.token }}
   
-  IMAGE_REGISTRY: quay.io/${{ github.repository_owner }}
+  IMAGE_REGISTRY: quay.io/aibrahim
   IMAGE_REGISTRY_USER: ${{ secrets.QUAY_USER }}
   IMAGE_REGISTRY_PASSWORD: ${{ secrets.QUAY_TOKEN }}
 
