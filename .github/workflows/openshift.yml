@@ -148,7 +148,7 @@ jobs:
     # https://github.com/redhat-actions/push-to-registry#readme
     - name: Push to registry
       id: push-image
-      run: echo ${{ steps.build-image.outputs.image }}
+      run: podman images
 #       uses: redhat-actions/push-to-registry@v2
 #       with:
 #         image: ${{ steps.build-image.outputs.image }}
