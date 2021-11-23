@@ -151,8 +151,10 @@ jobs:
 #       run: docker images
       uses: redhat-actions/push-to-registry@v2
       with:
-        image: ghcr.io/${{ github.repository_owner }}/${{ steps.build-image.outputs.image }}
-        tags: ${{ steps.build-image.outputs.tags }}
+#         image: ${{ steps.build-image.outputs.image }}
+#         tags: ${{ steps.build-image.outputs.tags }}
+        image: ${{ env.APP_NAME }}
+        tags: ${{ env.IMAGE_TAGS }}
         registry: ${{ env.IMAGE_REGISTRY }}
         username: ${{ env.IMAGE_REGISTRY_USER }}
         password: ${{ env.IMAGE_REGISTRY_PASSWORD }}
