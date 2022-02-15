@@ -1,2 +1,2 @@
 # animals-counter
-updated README / test
+updated README
