@@ -1,1 +1,2 @@
 # animals-counter
+updated README
