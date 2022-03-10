@@ -78,7 +78,7 @@
 			   </executions>
 			   <configuration>
 			      <serverId>nexus</serverId>
-			      <nexusUrl>http://nexus-openshift-operators.apps.cluster-5c55.5c55.sandbox909.opentlc.com/</nexusUrl>
+			      <nexusUrl>http://nexus-openshift-operators.apps.cluster-a2f2.a2f2.sandbox730.opentlc.com/</nexusUrl>
 			      <skipStaging>true</skipStaging>
 			   </configuration>
 			</plugin>
