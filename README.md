@@ -18,15 +18,15 @@ To view the list of animals:
 
 To validate using the Postgres DB: 
 
-        sh-4.4$ psql -U <user> -d animals
-        psql (10.17)
-        Type "help" for help.
+    sh-4.4$ psql -U <user> -d animals
+    psql (10.17)
+    Type "help" for help.
 
-        animals=> select * from animal;
-         id | age | name | type 
-        ----+-----+------+------
-          1 |   1 | bond | dog
-          2 |   1 | koki | cat
-        (2 rows)
+    animals=> select * from animal;
+     id | age | name | type 
+    ----+-----+------+------
+      1 |   1 | bond | dog
+      2 |   1 | koki | cat
+    (2 rows)
 
-        animals=> 
+    animals=> 
